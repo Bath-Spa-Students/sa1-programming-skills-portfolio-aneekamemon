@@ -12,21 +12,12 @@ is initialized with specific names (“Jake” “Zac”, “Ian”, “Ron”, 
 
 # Define the list filled with the 6 string names. 
 
-names = ["Jake", "Zac", "Ian", "Ron", "Sam", "Dave"]
+names = ["Jake", "Zac", "Ian", "Ron", "Sam", "Dave"]   
 
-NAME = ("Sam")
+NAME = ("Sam")  # In this case we have to search for the name "Sam".
 
-specific_name_search = input("Enter the name you'd like to search for: ").strip().lower().upper() # This allows the user to type the name they are looking for, irrespective capitalization or lowercase lettering. 
-
-found = False   # Tracks whether or not the name has been found
-
-
-
-for NAME in names: # Loop checks if each name matches user input. 
-    if specific_name_search.lower() == NAME.lower():    
-        found = True    # When a match in names is discovered 
-
-        print (f"The name {specific_name_search.lower()} is on the list!") # This is what will be printed out.
-        break   # Exit the loop, because the name has been found..
-if not found: # If the name is not found, this will print out.
-    print (f"The name '{specific_name_search.lower()}' is NOT on the list... ")
+if NAME in names:   # If the name 'Sam' is in the list
+    print (f"The name '{NAME}' is on the list!") # This is what will be printed out.
+else:
+        # If the name 'Sam' is not found, this will print out.
+    print (f"The name '{NAME}' is NOT on the list... ")
