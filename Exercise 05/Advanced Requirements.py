@@ -33,6 +33,8 @@ and print the number of days in the corresponding month.
 # Dictionary of the days in each given month:
 
 days_of_the_month = {
+
+# num of days in the months  # MONTHS
 1: 31,                  # January
 2: 28,                  # February   (if non-leap year)
 3: 31,                  # March
@@ -70,7 +72,7 @@ def ordinal_suffix(number):
 
 # Ensure the month number is in the valid range
 try: 
-    month_num = int(input("Please enter a number between 1 to 12 in accordance to the months: ").strip())
+    month_num = int(input("Please enter a number between 1 to 12 in accordance to the months: ")
     if month_num in (days_of_the_month):    # Checks the validity of the number entered (whether or not it is in the dictionary...)
         suffix = ordinal_suffix(month_num)      # Places suffix after month number
         
