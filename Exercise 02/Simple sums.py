@@ -1,4 +1,4 @@
-# Exercise 2: Simple Sums 
+# Exercise 2: Simple Sums
 
 # Declare a variable and initialize it with the integer value '8'.
 
