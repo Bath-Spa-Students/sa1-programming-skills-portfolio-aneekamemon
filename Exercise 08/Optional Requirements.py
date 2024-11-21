@@ -1,8 +1,13 @@
 # Simple Search - Optional Requirements
 
+'''
+Optional Requirements:
+1. Allow the user to input the search term instead of using a predefined value.
+2. Implement the search functionality based on user input.
+# This has been copied from the exercise sheet.
+'''
 
-
-# Define the list filled with the 6 string names. 
+# Define the list with the 6 string names. 
 
 names = ["Jake", "Zac", "Ian", "Ron", "Sam", "Dave"]
 
