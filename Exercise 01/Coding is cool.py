@@ -1,4 +1,4 @@
-# Coding is cool (assignment)
+# Coding is cool 
 
 # Assigning the word 'coding' to the variable 'word1'
 word1 = "coding"
