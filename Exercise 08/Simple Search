@@ -10,7 +10,7 @@ is initialized with specific names (“Jake” “Zac”, “Ian”, “Ron”, 
 
 '''
 
-# Define the list filled with the 6 string names. 
+# Define the list with the 6 string names. 
 
 names = ["Jake", "Zac", "Ian", "Ron", "Sam", "Dave"]   
 
