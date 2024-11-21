@@ -22,8 +22,10 @@ and print the number of days in the corresponding month.
 # Dictionary of the days in each given month:
 
 days_of_the_month = {
+
+# num of days in the months  # MONTHS
 1: 31,                  # January
-2: 28,                  # February   (if non-leap year)
+2: 28,                  # February
 3: 31,                  # March
 4: 30,                  # April
 5: 31,                  # May
