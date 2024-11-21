@@ -22,7 +22,7 @@ maximum_num_of_attempts = 5                 # This code sets the maximum passwor
 
 while num_of_attempts < maximum_num_of_attempts:      # This creates a loop that continues until a correct password is entered, as it asks the user for the correct password...
 
-    user_password = input("Enter the correct password: ").upper().strip()      # upper.() allows for the text to be in all caps 
+    user_password = input("Enter the correct password: ") 
 
     num_of_attempts += 1        # This operator adds an attempt count onto the counter, after an attempt has been made; appending a attempt to the string.
 
@@ -30,10 +30,10 @@ while num_of_attempts < maximum_num_of_attempts:      # This creates a loop that
         print ("The correct password has been entered!")
         break
     else:
-        attempts_remaining = maximum_num_of_attempts - num_of_attempts      # The minus operator will deduce the number of attempts being made from the maximum number of attempts. 
+        attempts_remaining = (maximum_num_of_attempts - num_of_attempts)     # The minus operator will deduce the number of attempts being made from the maximum number of attempts. 
 
 
-        print (f"Incorrect password, please try again! You have {attempts_remaining} remaining attempts.")    # When incorrect, it will inform the user of the attempts remaining..
+        print (f"Incorrect password, please try again!\nYou have {attempts_remaining} remaining attempts. \n")    # When incorrect, it will inform the user of the attempts remaining..
 
         if num_of_attempts == maximum_num_of_attempts:      # This shows that the maximum amount of attempts have been reached.
             print ("Access has been revoked, you have entered too many incorrect password attempts. AUTHORITIES HAVE BEEN ALERTED! ") # If too many attempts have been made and the password is wrong the loops ends and the user is notified. 
