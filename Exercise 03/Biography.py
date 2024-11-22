@@ -30,14 +30,10 @@ age = 18                # Age is a integer in this case
 
 # use 'keys' correlated to their specific values
 
-information = {
-    "name": name,
-    "hometown": hometown,
-    "age": age
-}
+information = { "name": name, "hometown": hometown, "age": age }
 
 # Print values in seperate lines (through the use of '\n')
 # As well as using variables with appropriate data types. 
 
 
-print (f"{information['name']}\n{information['hometown']}\n{information['age']}")
+print (f"\n{information['name']}\n{information['hometown']}\n{information['age']}\n")
