@@ -21,23 +21,11 @@ and print the number of days in the corresponding month.
 
 # Dictionary of the days in each given month:
 
-days_of_the_month = {
 
 # num of days in the months  # MONTHS
-1: 31,# January
-2: 28,# February
-3: 31,# March
-4: 30,# April
-5: 31,# May
-6: 30,# June
-7: 31,# July
-8: 31,# August
-9: 30,# September
-10: 31,# October
-11: 30,# November
-12: 31,# December
 
-}
+days_of_the_month = {1: 31,2: 28,3: 31,4: 30,5: 31,6: 30,7: 31,8: 31,9: 30,10: 31,11: 30,12: 31,}
+
 
 
 # This code ensures that there is a suffix placed after the a month number is added...
@@ -60,12 +48,17 @@ def ordinal_suffix(number):
 # .strip() ensures removal of unnecessary whitespace
 
 # Ensure the month number is in the valid range
-try: 
+while True: 
+    
+    
     month_num = int(input("Please enter a number between 1 to 12 in accordance to the months: ").strip())
+    
+    
     if month_num in (days_of_the_month):    # Checks the validity of the number entered (whether or not it is in the dictionary...)
         suffix = ordinal_suffix(month_num)      # Places suffix after month number
+       
         print (f"The number of days in the {month_num}{suffix} month is {days_of_the_month[month_num]}.")
+    
+    
     else:       # Redirects user to only enter numbers between 1 to 12.
         print ("That isn't a valid month number. Please try to enter a number between 1 to 12. ")
-except ValueError:      # Asks to enter integers between 1-12 only...
-    print ("Invalid input... Please enter a numerical number between the range of 1 to 12.")
