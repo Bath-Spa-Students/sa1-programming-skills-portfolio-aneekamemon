@@ -14,10 +14,12 @@ is initialized with specific names (“Jake” “Zac”, “Ian”, “Ron”, 
 
 names = ["Jake", "Zac", "Ian", "Ron", "Sam", "Dave"]   
 
-NAME = ("Sam")  # In this case we have to search for the name "Sam".
+SAM = ("Sam")  # In this case we have to search for the name "Sam".
 
-if NAME in names:   # If the name 'Sam' is in the list
-    print (f"The name '{NAME}' is on the list!") # This is what will be printed out.
+if SAM in names:   # If the name 'Sam' is in the list
+    
+    print (f"The name '{SAM}' is on the list!") # This is what will be printed out.
+
 else:
         # If the name 'Sam' is not found, this will print out.
-    print (f"The name '{NAME}' is NOT on the list... ")
+    print (f"The name '{SAM}' is NOT on the list... ")
