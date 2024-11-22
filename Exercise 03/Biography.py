@@ -36,4 +36,4 @@ information = { "name": name, "hometown": hometown, "age": age }
 # As well as using variables with appropriate data types. 
 
 
-print (f"\n{information['name']}\n{information['hometown']}\n{information['age']}\n")
+print (f"\n{information['name']} \n\n{information['hometown']} \n\n{information['age']} \n")
