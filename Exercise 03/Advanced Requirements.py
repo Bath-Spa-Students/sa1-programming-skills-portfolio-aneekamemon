@@ -12,12 +12,10 @@ How can you prevent this issue?
 
 # Extract input from the user; such as their full name, hometown, and age.
 
-# Adding .strip() allows for the removal of extra whitespace.
-
 # Both name and hometown must be entered as string data types...
 
-user_name = input ("Please enter your full name: ").strip()
-user_hometown = input ("Please enter your hometown: ").strip()
+user_name = input ("Please enter your full name: ")
+user_hometown = input ("Please enter your hometown: ")
 
 # To ensure that integers will be processed as the age (eg. 20, instead of Twenty). A loop must be used...
 
@@ -29,8 +27,18 @@ while True:
         print ("Please enter your numerical age instead...")
 
 
-print ("\nUser Information: " "\n")
 
-print (f"Full name: {user_name}" "\n")
-print (f"Hometown: {user_hometown}" "\n")
-print (f"Age: {user_age}" "\n")
+# title
+print ("\nYour Input... " "\n\n")
+
+
+# this will print {full name}
+print (f"Full name: {user_name}" "\n\n")
+
+# this will print {hometown}
+
+print (f"Hometown: {user_hometown}" "\n\n")
+
+# this will print {age}
+
+print (f"Age: {user_age}" "\n\n")
