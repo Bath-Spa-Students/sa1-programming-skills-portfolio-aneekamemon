@@ -31,24 +31,9 @@ and print the number of days in the corresponding month.
 # The values in the keys will be the days in each given month
 
 # Dictionary of the days in each given month:
-
-days_of_the_month = {
-
 # num of days in the months  # MONTHS
-1: 31,# January
-2: 28,# February 
-3: 31,# March
-4: 30,# April
-5: 31,# May
-6: 30,# June
-7: 31,# July
-8: 31,# August
-9: 30,# September
-10: 31,# October
-11: 30,# November
-12: 31,# December
 
-}
+days_of_the_month = {1: 31,2: 28,3: 31,4: 30,5: 31,6: 30,7: 31,8: 31,9: 30,10: 31,11: 30,12: 31,}
 
 
 # This code ensures that there is a suffix placed after the a month number is added...
@@ -71,20 +56,28 @@ def ordinal_suffix(number):
 # .strip() ensures removal of unnecessary whitespace
 
 # Ensure the month number is in the valid range
-try: 
-    month_num = int(input("Please enter a number between 1 to 12 in accordance to the months: ")
+
+while True:
+
+
+    month_num = int(input("Please enter a number between 1 to 12 in accordance to the months: "))
+    
+    
     if month_num in (days_of_the_month):    # Checks the validity of the number entered (whether or not it is in the dictionary...)
         suffix = ordinal_suffix(month_num)      # Places suffix after month number
         
         # This is for the leap year section of the exercise 
         # In the case that a leap year occurs in the second month (February), the user needs to be questioned whether or not the year is a leap year.
+        
+        
         if month_num == 2:
             if_leap_year = input ("Is this particular February a leap year? (yes or no): ").lower().strip()     # '.lower' changes all text to lowercase
             days = 29 if if_leap_year == "yes"   else 28       # If the user types in "yes, then the amount of days that will show at the terminal is 29, otherwise it will be 28.
         else: 
             days = days_of_the_month[month_num]
+        
+        
+        
         print (f"The number of days in the {month_num}{suffix} month is {days}. ")
     else:      # Redirects user to only enter numbers between 1 to 12.
         print ("That isn't a valid month number. Please try to enter a number between 1 to 12. ")
-except ValueError:      # Asks to enter integers between 1-12 only...
-    print ("Invalid input... Please enter a numerical number between the range of 1 to 12.")
