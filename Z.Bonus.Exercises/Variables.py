@@ -8,9 +8,15 @@ variable to a new message, and print the new message.
 
 '''
 
-vari = ("Hello, Whats your name?")
-print(vari)
 
-vari = ("My name is...")
-print(vari)
+vari = ("Hello, Whats your name?")  # This is the inital message assigned to the variable "vari"
 
+
+print(vari) # This will print out the message
+
+
+
+vari = ("My name is...") # This is the new message assigned to the variable "vari"
+
+
+print(vari) # This will print out the message
