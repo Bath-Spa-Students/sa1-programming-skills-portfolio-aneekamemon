@@ -2,9 +2,6 @@
 
 '''
 
-You should have keys such as first_name, last_name, age, and city. Print each piece of
-information stored in your dictionary.
-
 Loops- Pizza Toppings :
 
 Write a loop that prompts the user to enter a series of pizza toppings until they enter a
