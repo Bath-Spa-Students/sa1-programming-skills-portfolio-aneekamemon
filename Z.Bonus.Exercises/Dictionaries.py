@@ -7,3 +7,16 @@ You should have keys such as first_name, age, and city. Print each piece of info
 
 # This has been taken from the bonus exercise sheet.
 '''
+# Write down the information about the person you know, corresponding to specific variables.
+
+# First variable is their first name
+first_name = "Ali"                 # first_name is a string in this case
+
+# Second variable is your hometown
+last_name = "Memon"           # last_name is a string too
+
+# Third variable is the age 
+age = 15             # Age is a integer in this case
+
+# City they live in...
+city_name = "Karachi"
