@@ -19,7 +19,7 @@ booktitle = "VarJak Paw"        # Title of the book..
 
 def print_favorite_book(booktitle):          # This is the parameter which is the title
 
-    print (f"My brother's favorite book is, {booktitle}!")  # This is what should be printed out...
+    print (f"\n\nMy brother's favorite book is, {booktitle}!\n\n")  # This is what should be printed out...
 
 def main():     # This is the main function which is defined 
 
