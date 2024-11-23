@@ -14,5 +14,9 @@ version that fails will have no output.)
 # This has been copied from the bonus exercise sheet.
 
 '''
+alien_colors = ["green", "yellow", "red"]   # Dictionary with different alien colors
 
+user_input = input("\nEnter the color of the alien: ").lower() # .lower() allows for the colors to be typed in lowercased. 
+
+points_gained = 0       # The starting amounts of points.
 
