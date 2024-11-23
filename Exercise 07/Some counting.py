@@ -15,7 +15,7 @@ loops in a single project
 
 print ("Counting up from 0 - 50: \n" )     # This loop counts upwards from 0 to 50 with the increments of 1. The \n allows for a gap. 
 
-for thenumbers in range (0, 51, 1):
+for thenumbers in range (0, 51):
     print (thenumbers)
 
 print ("\n Counting down from 50 - 0: \n")     # This loop counts downwards from 50 to 0 with the increments of 1
@@ -25,7 +25,7 @@ for thenumbers in range (50, -1, -1):
 
 print ("\n Counting up from 30 - 50: \n")     # This loop counts upwards from 30 to 50 with the increments of 1
 #The \n allows for a gap. 
-for thenumbers in range (30, 51, 1):
+for thenumbers in range (30, 51):
     print (thenumbers)
 
 print ("\n Counting down from 50 - 10: \n")     # This loop counts downwards from 50 to 10 with the increments of 2
