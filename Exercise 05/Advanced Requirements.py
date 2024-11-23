@@ -72,7 +72,7 @@ while True:
         
         if month_num == 2:
             if_leap_year = input ("Is this particular February a leap year? (yes or no): ").lower().strip()     # '.lower' changes all text to lowercase
-            days = 29 if if_leap_year == "yes"   else 28       # If the user types in "yes, then the amount of days that will show at the terminal is 29, otherwise it will be 28.
+            days = (29) if if_leap_year == "yes"   else (28)       # If the user types in "yes, then the amount of days that will show at the terminal is 29, otherwise it will be 28.
         else: 
             days = days_of_the_month[month_num]
         
